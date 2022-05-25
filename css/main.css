@@ -1,0 +1,117 @@
+#signupbody{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas: 
+    "as su su as2"
+    "as su su as2"
+    "as su su as2"
+    ;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    
+    width: 100vw;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas: 
+    "hd hd hd hd"
+    "mn mn mn mn"
+    "ft ft ft ft"
+    ;
+}
+
+
+header{
+    grid-area: hd;
+    background-color: brown;
+
+}
+
+
+
+main{
+    grid-area: mn;
+    display: grid;
+    grid-template-areas:
+    'ms'
+    'txt'
+    ;
+    grid-template-rows: 1fr 75px;
+    background-color: blue;
+}
+
+#signup{
+    grid-area: su;
+    justify-content: center;
+
+}
+
+#writingbox{
+    grid-area: txt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+#textbox{
+    background-color: white;
+    align-self: center;
+}
+
+#ulholder{
+    grid-area: ms;
+    justify-content: center;
+    
+}
+
+#Messages{
+    text-align: center;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    grid-area: ft;
+    background-color: chartreuse;
+}
+
+li{
+    color: white;
+}
+
+li::marker{
+    color: blue; 
+}
+
+.text{
+
+    height: 25px;
+    border-radius: 5px;
+    padding: 4px;
+    border: solid thin #aaa;
+    width: 100%;
+}
+
+#button{
+
+    padding: 10px;
+    width: 100px;
+    color: white;
+    background-color: lightblue;
+    border: none;
+}
+
+#box{
+
+    background-color: grey;
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+}
